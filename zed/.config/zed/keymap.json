@@ -1,0 +1,7 @@
+[
+  {
+    "bindings": {
+      "cmd-b": ["workspace::SendKeystrokes", "cmd-r"]
+    }
+  }
+]

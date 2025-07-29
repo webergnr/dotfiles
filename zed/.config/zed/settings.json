@@ -1,0 +1,180 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "edit_predictions": {
+    // "disabled_globs": [],
+    "mode": "eager",
+    // "copilot": {
+    //   "proxy": null,
+    //   "proxy_no_verify": null
+    // },
+    "enabled_in_text_threads": false
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "icon_theme": "Material Icon Theme",
+  "show_edit_predictions": true,
+
+  "collaboration_panel": {
+    "button": true
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true
+  },
+  // "linked_edits": true,
+  "chat_panel": {
+    "button": "never"
+  },
+  // "format_on_save": "off",
+  "notification_panel": {
+    "dock": "left",
+    "button": false
+  },
+  "agent": {
+    "profiles": {
+      "?": {
+        "name": "?",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      },
+      "nice-profile": {
+        "name": "nice-profile",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
+    "always_allow_tool_actions": true,
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-7-sonnet-latest"
+    },
+
+    // "enabled": true,
+    "button": true
+  },
+  "project_panel": {
+    "dock": "right",
+    "button": false,
+    "file_icons": true,
+    "folder_icons": false,
+    "default_width": 230,
+    "indent_size": 18,
+    "scrollbar": {
+      "show": "never"
+    }
+  },
+  "theme": "Catppuccin Mocha",
+  "ui_font_family": "iMWritingDuo Nerd Font",
+  // "ui_font_features": {
+  //   "calt": false
+  // },
+  "buffer_font_family": "iMWritingDuo Nerd Font",
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  // "vertical_scroll_margin": 999,
+  "auto_update": true,
+  "extend_comment_on_newline": false,
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  },
+  "gutter": {
+    "line_numbers": false,
+    "code_actions": false,
+    // "folds": false,
+    "runnables": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "relative_line_numbers": false,
+  "wrap_guides": [120],
+  "vim": {
+    "use_system_clipboard": "never",
+    "use_smartcase_find": true
+    // "cursor_shape": {
+    //   "normal": "hollow",
+    //   "insert": "bar",
+    //   "replace": "block",
+    //   "visual": "underline"
+    // }
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  "current_line_highlight": "none",
+  // "active_pane_magnification": 1,
+  "outline_panel": {
+    "auto_fold_dirs": true,
+    "button": false,
+    "dock": "right",
+    "git_status": false
+  },
+  "languages": {
+    // "TypeScript": {
+    //   "formatter": {
+    //     "external": {
+    //       // Use the path relative to your project root
+    //       "command": "node_modules/.bin/prettier",
+    //       "arguments": ["--stdin-filepath", "{buffer_path}"]
+    //     }
+    //   },
+    //   "code_actions_on_format": {
+    //     "source.fixAll.eslint": true
+    //   }
+    // },
+    // "TSX": {
+    //   "formatter": {
+    //     "external": {
+    //       "command": "node_modules/.bin/prettier",
+    //       "arguments": ["--stdin-filepath", "{buffer_path}"]
+    //     }
+    //   },
+    //   "code_actions_on_format": {
+    //     "source.fixAll.eslint": true
+    //   }
+    // },
+    // "JavaScript": {
+    //   "formatter": {
+    //     "external": {
+    //       "command": "node_modules/.bin/prettier",
+    //       "arguments": ["--stdin-filepath", "{buffer_path}"]
+    //     }
+    //   },
+    //   "code_actions_on_format": {
+    //     "source.fixAll.eslint": true
+    //   }
+    // }
+  },
+  "terminal": {
+    "button": false,
+    "font_size": 13,
+    "font_family": "iMWritingMono Nerd Font Mono",
+    "shell": {
+      "program": "lazygit"
+    }
+  },
+  "file_finder": {
+    "modal_max_width": "medium"
+  }
+}
