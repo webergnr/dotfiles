@@ -38,6 +38,7 @@
     "button": false
   },
   "agent": {
+    "default_profile": "write",
     "profiles": {
       "?": {
         "name": "?",
@@ -59,7 +60,7 @@
     },
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4-latest"
     },
 
     // "enabled": true,
@@ -120,8 +121,8 @@
     "metrics": false
   },
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 18,
+  "ui_font_size": 15.5,
+  "buffer_font_size": 16.5,
   "current_line_highlight": "none",
   // "active_pane_magnification": 1,
   "outline_panel": {
@@ -131,29 +132,31 @@
     "git_status": false
   },
   "languages": {
-    // "TypeScript": {
-    //   "formatter": {
-    //     "external": {
-    //       // Use the path relative to your project root
-    //       "command": "node_modules/.bin/prettier",
-    //       "arguments": ["--stdin-filepath", "{buffer_path}"]
-    //     }
-    //   },
-    //   "code_actions_on_format": {
-    //     "source.fixAll.eslint": true
-    //   }
-    // },
-    // "TSX": {
-    //   "formatter": {
-    //     "external": {
-    //       "command": "node_modules/.bin/prettier",
-    //       "arguments": ["--stdin-filepath", "{buffer_path}"]
-    //     }
-    //   },
-    //   "code_actions_on_format": {
-    //     "source.fixAll.eslint": true
-    //   }
-    // },
+    "TypeScript": {
+      //   "formatter": {
+      //     "external": {
+      //       // Use the path relative to your project root
+      //       "command": "node_modules/.bin/prettier",
+      //       "arguments": ["--stdin-filepath", "{buffer_path}"]
+      //     }
+      //   },
+      //   "code_actions_on_format": {
+      //     "source.fixAll.eslint": true
+      //   }
+      "format_on_save": "off"
+    },
+    "TSX": {
+      "format_on_save": "off"
+      //   "formatter": {
+      //     "external": {
+      //       "command": "node_modules/.bin/prettier",
+      //       "arguments": ["--stdin-filepath", "{buffer_path}"]
+      //     }
+      //   },
+      //   "code_actions_on_format": {
+      //     "source.fixAll.eslint": true
+      //   }
+    }
     // "JavaScript": {
     //   "formatter": {
     //     "external": {
