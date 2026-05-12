@@ -2,9 +2,6 @@
 [env]
 term = "xterm-256color"
 
-# [colors.primary]
-# background = "#000000"
-
 [font]
 size = 16
 
@@ -20,33 +17,48 @@ mods = "Control"
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 1
+opacity = 0.75
+blur = true
 
 [window.padding]
 x = 12
 y = 12
 
-# Normal colors
-[colors.normal]
-black = '#282828'
-red = '#ee5396'
-green = '#25be6a'
-yellow = '#08bdba'
-blue = '#78a9ff'
-magenta = '#be95ff'
-cyan = '#33b1ff'
-white = '#dfdfe0'
+[colors.primary]
+background = '#0B0C10'
+foreground = '#DCD8ED'
+bright_foreground = '#FFFFFF'
+dim_foreground = '#A09AAB'
 
-# Bright colors
+[colors.normal]
+black   = '#282828'
+red     = '#FF6FAE'
+green   = '#08BD8A'
+yellow  = '#E297DB'
+blue    = '#6F78FF'
+magenta = '#C58FFF'
+cyan    = '#B3BCEF'
+white   = '#DCD8ED'
+
 [colors.bright]
-black = '#484848'
-red = '#f16da6'
-green = '#46c880'
-yellow = '#2dc7c4'
-blue = '#8cb6ff'
-magenta = '#c8a5ff'
-cyan = '#52bdff'
-white = '#e4e4e5'
+black   = '#3A3A3A'
+red     = '#FF9BC3'
+green   = '#3DD4A6'
+yellow  = '#F2B1ED'
+blue    = '#8B92FF'
+magenta = '#D3A8FF'
+cyan    = '#CAD1FF'
+white   = '#FFFFFF'
+
+[colors.dim]
+black   = '#222222'
+red     = '#A6416E'
+green   = '#067A5A'
+yellow  = '#945E8E'
+blue    = '#454A9E'
+magenta = '#815C9E'
+cyan    = '#71769E'
+white   = '#9A97A8'
 
 [general]
 live_config_reload = true
